@@ -34,7 +34,7 @@ Run the Docker container
 docker run -d -p 8000:8000 skysage
 ```
 
-The application will be running at ```http://localhost:8000/static/index.html```
+The application will be running at ```http://localhost:8000```
 
 Enter the name of a city in the input field and click the "Get Weather" button to retrieve the current weather information for that city.
 
