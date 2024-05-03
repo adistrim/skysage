@@ -4,7 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        input[type="text"] {
+            width: 60%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 2px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #weatherInfo {
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -13,9 +47,10 @@
         <button onclick="getWeather()">Get Weather</button>
         <div id="loadingIndicator" style="display: none;">
             Loading...
-        </div>        
+        </div>
         <div id="weatherInfo"></div>
     </div>
-    <script src="script.js"></script>
+    <script src="/static/script.js"></script>
 </body>
+
 </html>
