@@ -1,0 +1,7 @@
+services:
+  - type: web
+    env: python
+    envFile: .env
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn wsgi:app
+    staticPublishPathRoot: static
